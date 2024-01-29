@@ -59,7 +59,7 @@ class AndroidWebViewCookieManager extends PlatformWebViewCookieManager {
     }
     return _cookieManager.setCookie(
       cookie.domain,
-      '${Uri.encodeComponent(cookie.name)}=${Uri.encodeComponent(cookie.value)}; path=${cookie.path}',
+      '${Uri.encodeComponent(cookie.name)}=${(cookie.value)}; path=${cookie.path}',
     );
   }
 
